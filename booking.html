@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="home.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#"><i class="fa-solid fa-utensils"></i> Yummy</a></div>
+            <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <button><a href="signin.html">sign in</a></button>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+            </ul>
+        </div>
+    </div>
+     
+    <section class="section-book">
+        <div class="book-container">
+            <div class="book-img">
+                <!-- image here -->
+            </div>
+            <div class="book-content">
+                <h3>Book Now</h3>
+                <form>
+                    <div class="form-row">
+                        <select name="days">
+                            <option value="SelectDay">Select Day</option>
+                            <option value="sunday">Sunday</option>
+                            <option value="monday">Monday</option>
+                            <option value="tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="thursday">Thursday</option>
+                            <option value="friday">Friday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                        <select name="hours">
+                            <option value="hours-select">Select Hour</option>
+                            <option value="10">10: 00</option>
+                            <option value="12">12: 00</option>
+                            <option value="14">14: 00</option>
+                            <option value="16">16: 00</option>
+                            <option value="18">18: 00</option>
+                            <option value="20">20: 00</option>
+                            <option value="22">22: 00</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Full Name">
+                        <input type="text" placeholder="Phone number">
+                    </div>
+                    <div class="form-row">
+                        <input type="number" placeholder="How Many Persons?" min="1">
+                    </div>
+                    <div class="form-row">
+                        <textarea cols="50" rows="3" placeholder="Special Requests"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" placeholder="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
